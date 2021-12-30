@@ -35,8 +35,7 @@ const observer = new IntersectionObserver(items => {
         })
 }, {
     root: scroller,
-    rootMargin: '0px',
-    threshold: 0.25
+    threshold: 0
 })
 
 
