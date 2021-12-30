@@ -23,7 +23,7 @@
                         <defs>
                             <animate xlink:href="#eyeStem" id="aStart" begin="0s;aEnd.end" attributeName="d"
                                 attributeType="XML" to="
-                                M16,512
+                                M0,512
                             a1,1 0 0 0 96,0
                             a1,1 0 0 0 -96,0
                             m96,0
@@ -33,26 +33,29 @@
                                 " dur="2s" fill="freeze" />
                             <animate xlink:href="#eyeStem" id="aMid" begin="aStart.end" attributeName="d"
                                 attributeType="XML" to="
-                                M96,512
+                                M32,512
                             a1,1 0 0 0 96,0
                             a1,1 0 0 0 -96,0
-                            m96,16
+                            m96,0
                             l128,0
                             a1,1 0 0 0 512,0
                             a1,1 0 0 0 -512,0
                                 " dur="4s" fill="freeze" />
                             <animate xlink:href="#eyeStem" id="aEnd" begin="aMid.end" attributeName="d"
                                 attributeType="XML" to="
-                                M64,528
-                            a1,1 0 0 0 112,0
-                            a1,1 0 0 0 -112,0
+                                M8,480
+                            a1,1 0 0 0 96,0
+                            a1,1 0 0 0 -96,0
                             m96,0
                             l128,0
-                            a1,1 0 0 0 480,0
-                            a1,1 0 0 0 -480,0
+                            a1,1 0 0 0 512,0
+                            a1,1 0 0 0 -512,0
                                 " dur="1s" fill="freeze" />
+
+                            <animate xlink:href="#iris" attributeName="fill" keyTimes="0;0.25;1" values="#fff;#fdd;#fff"
+                                repeatCount="indefinite" dur="5s" />
                         </defs>
-                        <g fill="none" stroke="black" stroke-width="32">
+                        <g fill="none" stroke="black" stroke-width="24">
                             <path id="eyeStem" d="
                             M64,512
                             a1,1 0 0 0 96,0
@@ -62,7 +65,7 @@
                             a1,1 0 0 0 512,0
                             a1,1 0 0 0 -512,0
                             " fill-rule="inherit" fill="#f9f5f5" />
-                            <circle cx="512" cy="512" r="128" fill="#5cf4" />
+                            <circle id="iris" cx="512" cy="512" r="160" stroke-width="24" />
                             <circle cx="512" cy="512" r="32" fill="black" />
                         </g>
                     </svg>
