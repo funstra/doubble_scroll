@@ -28,6 +28,26 @@ main > section {
 article p {
   text-align: justify;
   text-indent: 1ch;
+
+  column-width: 30ch;
+}
+article p + p {
+  margin-top: 1rem;
+}
+article p:first-of-type {
+  position: relative;
+  font-style: italic;
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+  width: 100%;
+  user-select: none;
+  text-align: left;
+  letter-spacing: -0.5ch;
+  word-spacing: var(--s, -1ch);
+  line-height: 0.5;
+  padding-bottom: 5rem;
+  margin-bottom: 4rem;
+  z-index: 10;
 }
 a {
   position: relative;
@@ -60,7 +80,9 @@ article h2 {
   text-transform: uppercase;
   margin-bottom: 1rem;
   padding-left: 0.5ch;
-  text-align: center;
+  white-space: nowrap;
+  font-size: clamp(8px, 3vw, 1.25rem);
+  /* text-align: center; */
 }
 article h2::before {
   position: absolute;
